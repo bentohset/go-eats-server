@@ -8,5 +8,5 @@ CREATE TABLE IF NOT EXISTS places
 	cuisine TEXT NOT NULL,
 	mealtime TEXT NOT NULL,
 	rating NUMERIC NOT NULL,
-	approved BOOL DEFAULT 0
+	approved BOOL DEFAULT false
 )
