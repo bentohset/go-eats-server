@@ -1,1 +1,6 @@
 .env
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+kubeconfig
+*/.terraform.lock.hcl

@@ -1,0 +1,13 @@
+version: '3'
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: go-eats-server
+    ports:
+      - "8080:8080"
+    image: bentohset/go-eats-server:latest
+    environment:
+      - DOCKERHUB_USERNAME=bentohset
+      - DOCKERHUB_PASSWORD=${DOCKER_PASSWORD}
